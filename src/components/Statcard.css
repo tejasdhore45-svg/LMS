@@ -1,0 +1,207 @@
+/* ======================================================
+   LIBRARY MANAGEMENT SYSTEM - STATISTICS CARD STYLING
+====================================================== */
+
+/* ================= MAIN CARD ================= */
+
+.stat-card {
+  position: relative;
+
+  background-color: #ffffff;
+  border: 1px solid #e8edf4;
+  border-radius: 16px;
+
+  padding: 24px;
+
+  min-width: 0;
+  overflow: hidden;
+
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* Premium hover effect */
+
+.stat-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+
+  border-color: #dce4ef;
+}
+
+/* ================= TOP SECTION ================= */
+
+.stat-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+/* Statistics title */
+
+.stat-card-title {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+/* ================= ICON CONTAINER ================= */
+
+.stat-card-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 13px;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.stat-card-content {
+  margin-top: 12px;
+}
+
+/* Statistics number */
+
+.stat-card-value {
+  margin: 0;
+
+  color: #17233c;
+
+  font-size: 34px;
+  font-weight: 750;
+
+  letter-spacing: -1.2px;
+
+  line-height: 1.2;
+}
+
+/* Description below statistic */
+
+.stat-card-description {
+  margin: 10px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* ================= BOTTOM ACCENT ================= */
+
+.stat-card-accent {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  opacity: 0.85;
+}
+
+/* ======================================================
+   CARD COLOR THEMES
+====================================================== */
+
+/* ================= BLUE ================= */
+
+.stat-card--blue .stat-card-icon {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.stat-card--blue .stat-card-accent {
+  background-color: #2563eb;
+}
+
+/* ================= GREEN ================= */
+
+.stat-card--green .stat-card-icon {
+  background-color: #ecfdf5;
+  color: #059669;
+}
+
+.stat-card--green .stat-card-accent {
+  background-color: #10b981;
+}
+
+/* ================= PURPLE ================= */
+
+.stat-card--purple .stat-card-icon {
+  background-color: #f5f3ff;
+  color: #7c3aed;
+}
+
+.stat-card--purple .stat-card-accent {
+  background-color: #8b5cf6;
+}
+
+/* ================= RED ================= */
+
+.stat-card--red .stat-card-icon {
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+.stat-card--red .stat-card-accent {
+  background-color: #ef4444;
+}
+
+/* ================= ORANGE ================= */
+
+.stat-card--orange .stat-card-icon {
+  background-color: #fff7ed;
+  color: #ea580c;
+}
+
+.stat-card--orange .stat-card-accent {
+  background-color: #f97316;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 768px) {
+  .stat-card {
+    padding: 20px;
+  }
+
+  .stat-card-value {
+    font-size: 29px;
+  }
+
+  .stat-card-icon {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-card {
+    transition: none;
+  }
+
+  .stat-card:hover {
+    transform: none;
+  }
+}

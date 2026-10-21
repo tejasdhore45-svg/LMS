@@ -1,0 +1,39 @@
+.transactions-page{flex:1;min-width:0;padding:32px;background:#f5f7fb;color:#17233c;box-sizing:border-box}
+.transactions-page-header{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:28px}
+.transactions-page-header h1{font-size:28px;font-weight:700;margin:0 0 8px}
+.transactions-page-header p{font-size:14px;color:#64748b;margin:0}
+.transactions-header-actions,.transactions-table-actions{display:flex;align-items:center;gap:12px}
+.transactions-refresh-btn,.transactions-export-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer;transition:background .2s}
+.transactions-refresh-btn{background:#fff;border:1px solid #e2e8f0;color:#475569}.transactions-refresh-btn:hover{background:#f1f5f9}
+.transactions-export-btn{background:#2563eb;border:1px solid #2563eb;color:#fff}.transactions-export-btn:hover{background:#1d4ed8}
+.transactions-summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-bottom:28px}
+.transactions-summary-card{display:flex;align-items:center;gap:16px;min-width:0;padding:22px;background:#fff;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 4px 16px rgba(15,23,42,.03)}
+.transactions-summary-card p{font-size:13px;color:#64748b;margin:0 0 10px}.transactions-summary-card h2{font-size:28px;font-weight:700;margin:0}
+.transactions-summary-icon{width:50px;height:50px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:12px}
+.transactions-summary-icon.blue{background:#eff6ff;color:#2563eb}.transactions-summary-icon.orange{background:#fff7ed;color:#ea580c}.transactions-summary-icon.green{background:#f0fdf4;color:#16a34a}.transactions-summary-icon.red{background:#fef2f2;color:#dc2626}
+.transactions-table-section{background:#fff;border:1px solid #e2e8f0;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(15,23,42,.03)}
+.transactions-table-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px;border-bottom:1px solid #e2e8f0}
+.transactions-table-header h2{font-size:19px;margin:0 0 6px}.transactions-table-header p{font-size:13px;color:#94a3b8;margin:0}
+.transactions-search-box{display:flex;align-items:center;gap:10px;height:43px;padding:0 14px;border:1px solid #e2e8f0;border-radius:9px;background:#f8fafc;color:#94a3b8;box-sizing:border-box}
+.transactions-search-box:focus-within{border-color:#2563eb}.transactions-search-box input{width:210px;min-width:0;border:0;outline:0;background:transparent;font-size:13px;color:#17233c}
+.transactions-status-filter{height:43px;padding:0 14px;border:1px solid #e2e8f0;border-radius:9px;background:#f8fafc;color:#475569;font-size:13px;cursor:pointer}
+.transactions-table-wrapper{width:100%;overflow-x:auto}.transactions-table{width:100%;min-width:1000px;border-collapse:collapse;text-align:left}
+.transactions-table thead{background:#f8fafc}.transactions-table th{padding:17px 20px;font-size:12px;font-weight:600;color:#64748b;white-space:nowrap;border-bottom:1px solid #e2e8f0}
+.transactions-table td{padding:18px 20px;font-size:13px;color:#475569;border-bottom:1px solid #f1f5f9}.transactions-table tbody tr:hover{background:#f8fafc}.transactions-table tbody tr:last-child td{border-bottom:0}
+.transactions-student-info h4,.transactions-book-info h4{font-size:13px;font-weight:600;color:#17233c;margin:0 0 6px}.transactions-student-info p,.transactions-book-info p{font-size:12px;color:#94a3b8;margin:0}
+.transactions-book-info{display:flex;align-items:center;gap:12px;min-width:190px}.transactions-book-icon{width:40px;height:40px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:9px;background:#eff6ff;color:#2563eb}
+.transactions-status{display:inline-block;padding:7px 11px;border-radius:7px;font-size:12px;font-weight:600;white-space:nowrap}.transactions-status.issued{background:#dbeafe;color:#1d4ed8}.transactions-status.returned{background:#dcfce7;color:#15803d}.transactions-status.overdue{background:#fee2e2;color:#dc2626}
+.transactions-view-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 13px;border:0;border-radius:8px;background:#eff6ff;color:#2563eb;font-size:12px;font-weight:600;cursor:pointer}.transactions-view-btn:hover{background:#dbeafe}
+.transactions-empty-message{text-align:center;padding:45px!important;color:#94a3b8;font-size:14px}
+.transactions-modal-overlay{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(15,23,42,.55);box-sizing:border-box}
+.transactions-modal{width:100%;max-width:540px;max-height:90vh;overflow-y:auto;background:#fff;border-radius:16px;padding:28px;box-sizing:border-box;box-shadow:0 20px 60px rgba(15,23,42,.2)}
+.transactions-modal-header{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;margin-bottom:22px}.transactions-modal-header h2{font-size:22px;margin:0 0 8px}.transactions-modal-header p{font-size:13px;color:#64748b;margin:0}
+.transactions-close-btn{border:0;background:transparent;color:#64748b;cursor:pointer;padding:5px}
+.transactions-detail-id{display:flex;align-items:center;gap:9px;padding:13px 15px;margin-bottom:22px;background:#eff6ff;color:#2563eb;border-radius:9px;font-size:12px;overflow-wrap:anywhere}.transactions-detail-id span{min-width:0;overflow-wrap:anywhere}
+.transactions-detail-section{margin-bottom:24px}.transactions-detail-section h3{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:700;margin:0 0 16px}
+.transactions-detail-row{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:13px}.transactions-detail-row>span:first-child{font-size:13px;color:#64748b}.transactions-detail-row strong{font-size:13px;font-weight:600;text-align:right;overflow-wrap:anywhere;min-width:0}
+.transactions-modal-actions{display:flex;justify-content:flex-end;padding-top:18px;border-top:1px solid #e2e8f0}.transactions-close-action-btn{padding:11px 20px;border:0;border-radius:9px;background:#2563eb;color:#fff;font-size:13px;font-weight:600;cursor:pointer}.transactions-close-action-btn:hover{background:#1d4ed8}
+.transactions-page button:focus-visible,.transactions-page select:focus-visible,.transactions-page input:focus-visible{outline:2px solid #2563eb;outline-offset:2px}
+@media(max-width:1250px){.transactions-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.transactions-table-header{flex-direction:column;align-items:stretch}.transactions-table-actions{justify-content:flex-start}}
+@media(max-width:768px){.transactions-page{padding:20px}.transactions-page-header{flex-direction:column;align-items:stretch}.transactions-header-actions{flex-wrap:wrap}.transactions-table-actions{flex-direction:column;align-items:stretch}.transactions-search-box,.transactions-status-filter{width:100%}.transactions-search-box input{width:100%}.transactions-modal{padding:22px}.transactions-table-header{padding:20px}}
+@media(max-width:480px){.transactions-page{padding:14px}.transactions-page-header h1{font-size:24px}.transactions-summary-grid{grid-template-columns:1fr;gap:12px}.transactions-summary-card{padding:16px}.transactions-header-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.transactions-refresh-btn,.transactions-export-btn{padding:11px 8px;font-size:12px}.transactions-modal-overlay{padding:10px}.transactions-modal{padding:18px;max-height:94vh}.transactions-detail-row{gap:10px}.transactions-detail-row>span:first-child{flex:0 0 38%}}
